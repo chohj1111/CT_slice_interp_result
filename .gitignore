@@ -1,0 +1,8 @@
+*.pt
+*.nii.gz
+*.jpg
+*.png
+*.pk
+runs/
+*.pkl
+*.xlsx

@@ -1,0 +1,4725 @@
+DataParallel(
+  (module): MSR_RDN(
+    (SFENet1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (RDBs): ModuleList(
+      (0): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (1): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (2): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (3): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (4): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (5): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (GFF): Sequential(
+      (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (GW): GenWeights(
+      (meta_block): Sequential(
+        (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU(inplace=True)
+        (4): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (5): ReLU(inplace=True)
+        (6): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (7): ReLU(inplace=True)
+        (8): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+    (RFN): FUSE_RDN(
+      (SFENet1): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (RDBs): ModuleList(
+        (0): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (1): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (2): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (3): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+      )
+      (GFF): Sequential(
+        (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (UPNet): Sequential(
+        (0): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)DataParallel(
+  (module): MSR_RDN(
+    (SFENet1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (RDBs): ModuleList(
+      (0): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (1): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (2): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (3): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (4): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (5): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (GFF): Sequential(
+      (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (GW): GenWeights(
+      (meta_block): Sequential(
+        (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU(inplace=True)
+        (4): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (5): ReLU(inplace=True)
+        (6): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (7): ReLU(inplace=True)
+        (8): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+    (RFN): FUSE_RDN(
+      (SFENet1): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (RDBs): ModuleList(
+        (0): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (1): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (2): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (3): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+      )
+      (GFF): Sequential(
+        (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (UPNet): Sequential(
+        (0): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)DataParallel(
+  (module): MSR_RDN(
+    (SFENet1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (RDBs): ModuleList(
+      (0): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (1): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (2): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (3): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (4): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (5): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (GFF): Sequential(
+      (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (GW): GenWeights(
+      (meta_block): Sequential(
+        (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU(inplace=True)
+        (4): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (5): ReLU(inplace=True)
+        (6): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (7): ReLU(inplace=True)
+        (8): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+    (RFN): FUSE_RDN(
+      (SFENet1): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (RDBs): ModuleList(
+        (0): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (1): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (2): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (3): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+      )
+      (GFF): Sequential(
+        (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (UPNet): Sequential(
+        (0): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)DataParallel(
+  (module): MSR_RDN(
+    (SFENet1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (RDBs): ModuleList(
+      (0): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (1): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (2): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (3): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (4): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (5): RDB(
+        (convs): Sequential(
+          (0): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (1): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (2): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (3): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(160, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (4): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(192, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (5): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(224, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (6): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+          (7): RDB_Conv(
+            (conv): Sequential(
+              (0): Conv2d(288, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+            )
+          )
+        )
+        (LFF): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (GFF): Sequential(
+      (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (GW): GenWeights(
+      (meta_block): Sequential(
+        (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+        (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU(inplace=True)
+        (4): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (5): ReLU(inplace=True)
+        (6): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (7): ReLU(inplace=True)
+        (8): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+    (RFN): FUSE_RDN(
+      (SFENet1): Conv2d(2, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (SFENet2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (RDBs): ModuleList(
+        (0): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (1): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (2): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (3): RDB(
+          (convs): Sequential(
+            (0): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(64, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (1): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(76, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (2): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(88, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (3): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(100, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (4): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(112, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+            (5): RDB_Conv(
+              (conv): Sequential(
+                (0): Conv2d(124, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+                (1): ReLU()
+              )
+            )
+          )
+          (LFF): Conv2d(136, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+      )
+      (GFF): Sequential(
+        (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (UPNet): Sequential(
+        (0): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+)
+[Epoch 1]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 107.6494]	73.1+36.1s
+[36000/50000]	[L1: 74.9965]	68.3+36.2s
+
+Evaluation:
+[TEST x5]	PSNR: 34.6531 SSIM: 0.9181 (Best: 34.6531 0.9181 @epoch 1)
+Total time: 1738.81s
+
+[Epoch 2]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 36.9142]	68.3+35.7s
+[36000/50000]	[L1: 36.3294]	68.6+36.3s
+
+Evaluation:
+[Epoch 3]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 34.6937]	68.8+21.9s
+[36000/50000]	[L1: 34.6308]	68.8+22.3s
+
+Evaluation:
+[Epoch 4]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 32.4726]	69.4+26.1s
+[36000/50000]	[L1: 32.3831]	71.0+38.4s
+
+Evaluation:
+[Epoch 5]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 31.8029]	69.2+23.9s
+[36000/50000]	[L1: 31.5506]	68.9+22.7s
+
+Evaluation:
+[Epoch 6]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 31.1649]	69.0+18.9s
+[36000/50000]	[L1: 31.4107]	68.9+19.0s
+
+Evaluation:
+[Epoch 7]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 29.9546]	69.0+19.1s
+[36000/50000]	[L1: 29.7944]	68.9+19.0s
+
+Evaluation:
+[Epoch 8]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 31.0912]	68.8+18.9s
+[36000/50000]	[L1: 30.6064]	68.8+19.0s
+
+Evaluation:
+[Epoch 9]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 28.9244]	68.7+19.1s
+[36000/50000]	[L1: 28.9407]	68.7+19.1s
+
+Evaluation:
+[TEST x5]	PSNR: 36.9364 SSIM: 0.9424 (Best: 36.9364 0.9424 @epoch 9)
+Total time: 1532.42s
+
+[Epoch 10]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 28.6758]	68.0+19.0s
+[36000/50000]	[L1: 29.1444]	68.3+19.1s
+
+Evaluation:
+[Epoch 11]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 28.6810]	68.8+18.9s
+[36000/50000]	[L1: 28.4932]	68.8+19.0s
+
+Evaluation:
+[Epoch 12]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 28.4991]	68.8+19.0s
+[36000/50000]	[L1: 28.2415]	68.8+19.1s
+
+Evaluation:
+[Epoch 13]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.9000]	68.8+19.1s
+[36000/50000]	[L1: 27.8237]	68.8+19.2s
+
+Evaluation:
+[Epoch 14]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.6079]	68.8+19.1s
+[36000/50000]	[L1: 27.6531]	68.6+19.0s
+
+Evaluation:
+[Epoch 15]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.4734]	68.8+19.0s
+[36000/50000]	[L1: 27.4374]	68.8+19.0s
+
+Evaluation:
+[Epoch 16]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.2101]	68.8+18.9s
+[36000/50000]	[L1: 27.2916]	68.8+19.0s
+
+Evaluation:
+[Epoch 17]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.1663]	68.7+19.2s
+[36000/50000]	[L1: 27.0393]	68.7+19.1s
+
+Evaluation:
+[Epoch 18]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.4061]	68.8+19.0s
+[36000/50000]	[L1: 27.1801]	68.8+19.0s
+
+Evaluation:
+[Epoch 19]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 27.0441]	68.7+19.2s
+[36000/50000]	[L1: 26.9029]	68.7+19.1s
+
+Evaluation:
+[TEST x5]	PSNR: 37.5475 SSIM: 0.9462 (Best: 37.5475 0.9462 @epoch 19)
+Total time: 1739.16s
+
+[Epoch 20]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.8294]	68.3+30.7s
+[36000/50000]	[L1: 26.7994]	68.5+30.7s
+
+Evaluation:
+[Epoch 21]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.6130]	68.8+27.7s
+[36000/50000]	[L1: 26.6316]	68.9+27.6s
+
+Evaluation:
+[Epoch 22]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.4906]	69.4+23.7s
+[36000/50000]	[L1: 26.5590]	69.3+23.3s
+
+Evaluation:
+[Epoch 23]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.3489]	68.5+20.7s
+[36000/50000]	[L1: 26.3257]	68.5+21.1s
+
+Evaluation:
+[Epoch 24]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.4571]	68.7+20.6s
+[36000/50000]	[L1: 26.4090]	68.6+20.7s
+
+Evaluation:
+[Epoch 25]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.1613]	68.7+20.2s
+[36000/50000]	[L1: 26.2986]	68.6+19.9s
+
+Evaluation:
+[Epoch 26]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.9821]	68.5+19.7s
+[36000/50000]	[L1: 26.0785]	68.5+20.0s
+
+Evaluation:
+[Epoch 27]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.2080]	68.6+20.6s
+[36000/50000]	[L1: 26.1414]	68.7+21.4s
+
+Evaluation:
+[Epoch 28]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 26.0310]	68.4+20.7s
+[36000/50000]	[L1: 26.0083]	68.5+21.3s
+
+Evaluation:
+[Epoch 29]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.9876]	68.5+21.2s
+[36000/50000]	[L1: 25.9661]	68.6+21.6s
+
+Evaluation:
+[TEST x5]	PSNR: 37.7474 SSIM: 0.9473 (Best: 37.7474 0.9473 @epoch 29)
+Total time: 1925.28s
+
+[Epoch 30]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.9101]	68.4+31.2s
+[36000/50000]	[L1: 25.8235]	68.6+31.0s
+
+Evaluation:
+[Epoch 31]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.7215]	68.9+23.3s
+[36000/50000]	[L1: 25.7647]	69.2+23.8s
+
+Evaluation:
+[Epoch 32]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.9653]	69.0+21.9s
+[36000/50000]	[L1: 25.9413]	69.1+23.6s
+
+Evaluation:
+[Epoch 33]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.6174]	69.1+22.4s
+[36000/50000]	[L1: 25.6079]	69.4+23.2s
+
+Evaluation:
+[Epoch 34]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.6506]	69.0+21.4s
+[36000/50000]	[L1: 25.7020]	68.9+21.6s
+
+Evaluation:
+[Epoch 35]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.3833]	69.2+22.0s
+[36000/50000]	[L1: 25.5174]	69.1+22.0s
+
+Evaluation:
+[Epoch 36]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.5100]	69.0+21.2s
+[36000/50000]	[L1: 25.4483]	69.0+21.5s
+
+Evaluation:
+[Epoch 37]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.5770]	69.2+20.3s
+[36000/50000]	[L1: 25.4638]	69.1+21.1s
+
+Evaluation:
+[Epoch 38]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.2721]	69.1+20.6s
+[36000/50000]	[L1: 25.3555]	69.0+20.8s
+
+Evaluation:
+[Epoch 39]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.2279]	69.0+20.3s
+[36000/50000]	[L1: 25.2238]	69.1+20.4s
+
+Evaluation:
+[TEST x5]	PSNR: 37.8550 SSIM: 0.9483 (Best: 37.8550 0.9483 @epoch 39)
+Total time: 1897.19s
+
+[Epoch 40]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.3253]	68.4+30.4s
+[36000/50000]	[L1: 25.3071]	68.7+30.0s
+
+Evaluation:
+[Epoch 41]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.2711]	69.1+24.2s
+[36000/50000]	[L1: 25.2566]	69.2+24.2s
+
+Evaluation:
+[Epoch 42]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.4278]	68.9+21.9s
+[36000/50000]	[L1: 25.2834]	69.0+22.4s
+
+Evaluation:
+[Epoch 43]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.1325]	69.0+20.7s
+[36000/50000]	[L1: 25.0781]	68.9+21.8s
+
+Evaluation:
+[Epoch 44]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 25.1253]	69.1+22.0s
+[36000/50000]	[L1: 25.0444]	69.0+22.4s
+
+Evaluation:
+[Epoch 45]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.9230]	69.1+21.2s
+[36000/50000]	[L1: 25.0005]	69.2+21.6s
+
+Evaluation:
+[Epoch 46]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.9992]	69.1+21.6s
+[36000/50000]	[L1: 24.9209]	69.0+21.7s
+
+Evaluation:
+[Epoch 47]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.7794]	69.1+21.1s
+[36000/50000]	[L1: 24.9957]	69.1+21.3s
+
+Evaluation:
+[Epoch 48]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.9220]	69.1+21.4s
+[36000/50000]	[L1: 24.8810]	69.2+21.4s
+
+Evaluation:
+[Epoch 49]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.7586]	69.1+21.2s
+[36000/50000]	[L1: 24.8375]	69.2+21.3s
+
+Evaluation:
+[TEST x5]	PSNR: 38.0888 SSIM: 0.9497 (Best: 38.0888 0.9497 @epoch 49)
+Total time: 1943.66s
+
+[Epoch 50]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.8154]	68.5+29.7s
+[36000/50000]	[L1: 24.7429]	68.6+29.8s
+
+Evaluation:
+[Epoch 51]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.6044]	68.9+22.9s
+[36000/50000]	[L1: 24.7374]	68.9+22.8s
+
+Evaluation:
+[Epoch 52]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.5769]	69.0+21.1s
+[36000/50000]	[L1: 24.6441]	68.9+21.2s
+
+Evaluation:
+[Epoch 53]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.6189]	68.6+21.3s
+[36000/50000]	[L1: 24.6191]	68.4+21.5s
+
+Evaluation:
+[Epoch 54]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.5782]	68.5+21.2s
+[36000/50000]	[L1: 24.6338]	68.5+21.5s
+
+Evaluation:
+[Epoch 55]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.6504]	69.0+21.3s
+[36000/50000]	[L1: 24.6408]	69.2+21.0s
+
+Evaluation:
+[Epoch 56]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.6515]	68.9+21.1s
+[36000/50000]	[L1: 24.5957]	68.9+21.3s
+
+Evaluation:
+[Epoch 57]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.6518]	69.0+21.3s
+[36000/50000]	[L1: 24.6818]	69.1+21.4s
+
+Evaluation:
+[Epoch 58]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.6383]	68.9+21.5s
+[36000/50000]	[L1: 24.5760]	68.9+21.1s
+
+Evaluation:
+[Epoch 59]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.3042]	68.9+19.6s
+[36000/50000]	[L1: 24.4030]	69.1+19.7s
+
+Evaluation:
+[TEST x5]	PSNR: 38.1732 SSIM: 0.9502 (Best: 38.1732 0.9502 @epoch 59)
+Total time: 1936.97s
+
+[Epoch 60]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.2608]	68.6+30.1s
+[36000/50000]	[L1: 24.3859]	68.9+30.1s
+
+Evaluation:
+[Epoch 61]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.3374]	69.0+23.0s
+[36000/50000]	[L1: 24.4928]	69.0+22.4s
+
+Evaluation:
+[Epoch 62]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.9304]	69.1+21.5s
+[36000/50000]	[L1: 25.1330]	68.9+20.9s
+
+Evaluation:
+[Epoch 63]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.8661]	69.0+21.1s
+[36000/50000]	[L1: 24.7675]	69.1+21.5s
+
+Evaluation:
+[Epoch 64]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.3599]	69.0+21.0s
+[36000/50000]	[L1: 24.4596]	68.9+20.9s
+
+Evaluation:
+[Epoch 65]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.0103]	69.0+20.0s
+[36000/50000]	[L1: 24.4342]	69.0+19.9s
+
+Evaluation:
+[Epoch 66]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.5566]	69.0+19.9s
+[36000/50000]	[L1: 24.5632]	68.9+20.9s
+
+Evaluation:
+[Epoch 67]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.5271]	69.1+20.9s
+[36000/50000]	[L1: 24.4662]	68.9+20.9s
+
+Evaluation:
+[Epoch 68]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.2948]	68.9+19.7s
+[36000/50000]	[L1: 24.3784]	68.9+20.7s
+
+Evaluation:
+[Epoch 69]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.2756]	69.3+24.9s
+[36000/50000]	[L1: 24.1567]	69.2+24.6s
+
+Evaluation:
+[TEST x5]	PSNR: 38.2785 SSIM: 0.9508 (Best: 38.2785 0.9508 @epoch 69)
+Total time: 1946.08s
+
+[Epoch 70]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.5225]	68.5+29.2s
+[36000/50000]	[L1: 24.4699]	68.9+28.8s
+
+Evaluation:
+[Epoch 71]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.2959]	69.0+24.8s
+[36000/50000]	[L1: 24.2874]	69.1+24.6s
+
+Evaluation:
+[Epoch 72]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.2900]	68.9+22.5s
+[36000/50000]	[L1: 24.2017]	68.9+21.8s
+
+Evaluation:
+[Epoch 73]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.1526]	69.3+23.5s
+[36000/50000]	[L1: 24.1725]	69.0+22.0s
+
+Evaluation:
+[Epoch 74]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.8922]	69.0+24.9s
+[36000/50000]	[L1: 23.8915]	69.1+27.2s
+
+Evaluation:
+[Epoch 75]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.8196]	69.5+23.2s
+[36000/50000]	[L1: 23.8438]	69.5+22.3s
+
+Evaluation:
+[Epoch 76]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.3767]	69.5+22.9s
+[36000/50000]	[L1: 24.3549]	69.5+24.4s
+
+Evaluation:
+[Epoch 77]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.2511]	69.5+21.4s
+[36000/50000]	[L1: 24.1307]	69.6+22.5s
+
+Evaluation:
+[Epoch 78]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.8909]	69.3+21.5s
+[36000/50000]	[L1: 24.0587]	69.4+21.0s
+
+Evaluation:
+[Epoch 79]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.1866]	69.4+23.0s
+[36000/50000]	[L1: 24.1124]	69.6+24.1s
+
+Evaluation:
+[TEST x5]	PSNR: 38.3012 SSIM: 0.9509 (Best: 38.3012 0.9509 @epoch 79)
+Total time: 1946.27s
+
+[Epoch 80]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.9941]	68.5+30.4s
+[36000/50000]	[L1: 24.0363]	68.5+30.5s
+
+Evaluation:
+[Epoch 81]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.9408]	68.7+21.0s
+[36000/50000]	[L1: 23.9949]	68.8+21.5s
+
+Evaluation:
+[Epoch 82]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.8976]	69.0+21.2s
+[36000/50000]	[L1: 23.9581]	68.9+22.0s
+
+Evaluation:
+[Epoch 83]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.0149]	68.9+21.8s
+[36000/50000]	[L1: 23.9357]	68.9+22.2s
+
+Evaluation:
+[Epoch 84]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.7964]	69.0+21.2s
+[36000/50000]	[L1: 23.8928]	68.9+21.4s
+
+Evaluation:
+[Epoch 85]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.9241]	68.9+20.7s
+[36000/50000]	[L1: 23.9312]	68.9+21.2s
+
+Evaluation:
+[Epoch 86]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.5731]	68.8+21.2s
+[36000/50000]	[L1: 23.6556]	68.8+22.0s
+
+Evaluation:
+[Epoch 87]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 24.0039]	69.1+21.3s
+[36000/50000]	[L1: 23.9405]	69.0+22.1s
+
+Evaluation:
+[Epoch 88]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.8167]	68.8+20.4s
+[36000/50000]	[L1: 23.7810]	68.9+20.7s
+
+Evaluation:
+[Epoch 89]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.9517]	68.8+20.3s
+[36000/50000]	[L1: 23.8493]	68.8+19.7s
+
+Evaluation:
+[TEST x5]	PSNR: 38.3283 SSIM: 0.9512 (Best: 38.3283 0.9512 @epoch 89)
+Total time: 1868.65s
+
+[Epoch 90]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.8212]	68.1+30.2s
+[36000/50000]	[L1: 23.7609]	68.4+30.4s
+
+Evaluation:
+[Epoch 91]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.7236]	68.8+22.1s
+[36000/50000]	[L1: 23.7581]	69.1+25.0s
+
+Evaluation:
+[Epoch 92]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.6954]	69.2+24.8s
+[36000/50000]	[L1: 23.6528]	69.1+24.6s
+
+Evaluation:
+[Epoch 93]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.6710]	69.1+21.8s
+[36000/50000]	[L1: 23.7382]	69.2+20.9s
+
+Evaluation:
+[Epoch 94]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.7683]	69.2+21.5s
+[36000/50000]	[L1: 23.7164]	69.3+21.7s
+
+Evaluation:
+[Epoch 95]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.3683]	69.3+21.2s
+[36000/50000]	[L1: 23.4782]	69.3+21.6s
+
+Evaluation:
+[Epoch 96]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.6273]	69.2+21.1s
+[36000/50000]	[L1: 23.7272]	69.1+21.3s
+
+Evaluation:
+[Epoch 97]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.6819]	69.3+21.5s
+[36000/50000]	[L1: 23.7286]	69.2+21.7s
+
+Evaluation:
+[Epoch 98]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.4560]	69.3+21.6s
+[36000/50000]	[L1: 23.5886]	69.2+21.6s
+
+Evaluation:
+[Epoch 99]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.4909]	69.2+22.0s
+[36000/50000]	[L1: 23.5612]	69.5+22.4s
+
+Evaluation:
+[TEST x5]	PSNR: 38.4336 SSIM: 0.9515 (Best: 38.4336 0.9515 @epoch 99)
+Total time: 1780.72s
+
+[Epoch 100]	Learning rate: 1.00e-4
+[18000/50000]	[L1: 23.4551]	68.3+31.2s
+[36000/50000]	[L1: 23.5083]	68.5+31.1s
+
+Evaluation:
+[Epoch 101]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1778]	68.9+21.8s
+[36000/50000]	[L1: 23.1762]	69.0+22.9s
+
+Evaluation:
+[Epoch 102]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1221]	69.1+22.7s
+[36000/50000]	[L1: 23.1991]	68.9+23.6s
+
+Evaluation:
+[Epoch 103]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0683]	68.7+21.4s
+[36000/50000]	[L1: 23.1515]	68.7+22.4s
+
+Evaluation:
+[Epoch 104]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1818]	68.6+22.9s
+[36000/50000]	[L1: 23.1573]	68.6+22.7s
+
+Evaluation:
+[Epoch 105]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1491]	68.7+21.9s
+[36000/50000]	[L1: 23.1476]	68.7+22.0s
+
+Evaluation:
+[Epoch 106]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.2454]	68.6+21.0s
+[36000/50000]	[L1: 23.2234]	68.5+21.6s
+
+Evaluation:
+[Epoch 107]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.2654]	68.7+20.8s
+[36000/50000]	[L1: 23.3010]	68.8+20.8s
+
+Evaluation:
+[Epoch 108]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1846]	68.7+21.0s
+[36000/50000]	[L1: 23.2584]	68.7+21.1s
+
+Evaluation:
+[Epoch 109]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0170]	68.7+20.5s
+[36000/50000]	[L1: 23.0474]	68.8+20.8s
+
+Evaluation:
+[TEST x5]	PSNR: 38.5092 SSIM: 0.9518 (Best: 38.5092 0.9518 @epoch 109)
+Total time: 1924.25s
+
+[Epoch 110]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.2017]	68.6+29.3s
+[36000/50000]	[L1: 23.1599]	69.0+29.2s
+
+Evaluation:
+[Epoch 111]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0689]	69.7+21.9s
+[36000/50000]	[L1: 23.2024]	69.7+24.9s
+
+Evaluation:
+[Epoch 112]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1207]	69.2+21.7s
+[36000/50000]	[L1: 23.1902]	69.0+22.9s
+
+Evaluation:
+[Epoch 113]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0527]	69.0+23.9s
+[36000/50000]	[L1: 23.0669]	69.1+24.5s
+
+Evaluation:
+[Epoch 114]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1983]	68.8+21.1s
+[36000/50000]	[L1: 23.1458]	68.9+21.4s
+
+Evaluation:
+[Epoch 115]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1574]	68.9+21.2s
+[36000/50000]	[L1: 23.1852]	69.0+23.3s
+
+Evaluation:
+[Epoch 116]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.2612]	69.1+23.1s
+[36000/50000]	[L1: 23.1587]	69.0+22.4s
+
+Evaluation:
+[Epoch 117]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0497]	69.1+20.6s
+[36000/50000]	[L1: 23.0508]	69.2+20.6s
+
+Evaluation:
+[Epoch 118]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0417]	69.1+21.0s
+[36000/50000]	[L1: 23.0396]	69.3+21.1s
+
+Evaluation:
+[Epoch 119]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1451]	69.0+20.7s
+[36000/50000]	[L1: 23.1253]	69.3+21.3s
+
+Evaluation:
+[TEST x5]	PSNR: 38.6437 SSIM: 0.9524 (Best: 38.6437 0.9524 @epoch 119)
+Total time: 2431.18s
+
+[Epoch 120]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.2274]	68.4+29.9s
+[36000/50000]	[L1: 23.1820]	68.9+29.7s
+
+Evaluation:
+[Epoch 121]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0511]	69.5+23.3s
+[36000/50000]	[L1: 23.0946]	69.8+24.5s
+
+Evaluation:
+[Epoch 122]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8780]	69.5+22.3s
+[36000/50000]	[L1: 22.9174]	69.6+23.3s
+
+Evaluation:
+[Epoch 123]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.1181]	69.2+22.5s
+[36000/50000]	[L1: 23.1323]	69.0+21.4s
+
+Evaluation:
+[Epoch 124]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0069]	69.1+22.4s
+[36000/50000]	[L1: 22.9567]	69.0+23.6s
+
+Evaluation:
+[Epoch 125]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9979]	69.1+22.3s
+[36000/50000]	[L1: 22.9631]	69.0+21.9s
+
+Evaluation:
+[Epoch 126]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9601]	69.0+21.6s
+[36000/50000]	[L1: 23.0394]	68.9+22.0s
+
+Evaluation:
+[Epoch 127]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0460]	69.1+22.4s
+[36000/50000]	[L1: 23.0481]	69.1+22.1s
+
+Evaluation:
+[Epoch 128]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9727]	69.0+21.3s
+[36000/50000]	[L1: 23.0675]	69.2+23.6s
+
+Evaluation:
+[Epoch 129]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0851]	69.2+24.3s
+[36000/50000]	[L1: 23.0688]	69.1+23.5s
+
+Evaluation:
+[TEST x5]	PSNR: 38.5755 SSIM: 0.9521 (Best: 38.6437 0.9524 @epoch 119)
+Total time: 2213.54s
+
+[Epoch 130]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0626]	68.6+30.6s
+[36000/50000]	[L1: 22.9499]	69.1+30.7s
+
+Evaluation:
+[Epoch 131]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0345]	69.4+22.3s
+[36000/50000]	[L1: 22.9199]	69.4+22.7s
+
+Evaluation:
+[Epoch 132]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0181]	69.4+21.0s
+[36000/50000]	[L1: 22.9961]	69.7+22.8s
+
+Evaluation:
+[Epoch 133]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9931]	69.4+24.1s
+[36000/50000]	[L1: 23.0087]	69.1+22.6s
+
+Evaluation:
+[Epoch 134]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8784]	69.2+24.0s
+[36000/50000]	[L1: 22.9038]	69.0+23.4s
+
+Evaluation:
+[Epoch 135]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9239]	68.9+21.6s
+[36000/50000]	[L1: 22.9959]	69.2+23.4s
+
+Evaluation:
+[Epoch 136]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9691]	69.5+22.7s
+[36000/50000]	[L1: 22.9931]	69.2+22.3s
+
+Evaluation:
+[Epoch 137]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0442]	69.1+21.6s
+[36000/50000]	[L1: 22.8881]	69.2+21.5s
+
+Evaluation:
+[Epoch 138]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9166]	69.2+21.0s
+[36000/50000]	[L1: 22.9255]	69.1+21.0s
+
+Evaluation:
+[Epoch 139]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7936]	69.2+20.6s
+[36000/50000]	[L1: 22.8916]	69.4+20.6s
+
+Evaluation:
+[TEST x5]	PSNR: 38.5923 SSIM: 0.9522 (Best: 38.6437 0.9524 @epoch 119)
+Total time: 2267.10s
+
+[Epoch 140]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6885]	68.4+30.4s
+[36000/50000]	[L1: 22.7958]	68.8+30.2s
+
+Evaluation:
+[Epoch 141]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0287]	68.7+20.9s
+[36000/50000]	[L1: 23.0359]	68.8+20.6s
+
+Evaluation:
+[Epoch 142]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9038]	68.9+21.9s
+[36000/50000]	[L1: 22.8959]	68.8+24.1s
+
+Evaluation:
+[Epoch 143]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7899]	68.8+21.7s
+[36000/50000]	[L1: 22.8461]	68.7+22.0s
+
+Evaluation:
+[Epoch 144]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9066]	68.8+21.7s
+[36000/50000]	[L1: 22.8530]	68.9+22.7s
+
+Evaluation:
+[Epoch 145]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8962]	68.8+21.6s
+[36000/50000]	[L1: 22.9336]	68.9+22.1s
+
+Evaluation:
+[Epoch 146]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7949]	68.8+20.8s
+[36000/50000]	[L1: 22.8343]	68.7+20.9s
+
+Evaluation:
+[Epoch 147]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.9758]	68.8+22.0s
+[36000/50000]	[L1: 22.9240]	68.9+21.4s
+
+Evaluation:
+[Epoch 148]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 23.0091]	68.8+20.8s
+[36000/50000]	[L1: 22.9191]	68.8+20.5s
+
+Evaluation:
+[Epoch 149]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8732]	68.9+20.3s
+[36000/50000]	[L1: 22.7756]	69.1+20.3s
+
+Evaluation:
+[TEST x5]	PSNR: 38.5702 SSIM: 0.9522 (Best: 38.6437 0.9524 @epoch 119)
+Total time: 2137.54s
+
+[Epoch 150]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8684]	68.5+30.4s
+[36000/50000]	[L1: 22.8373]	68.8+30.4s
+
+Evaluation:
+[Epoch 151]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8621]	69.3+21.7s
+[36000/50000]	[L1: 22.8432]	69.4+22.5s
+
+Evaluation:
+[Epoch 152]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7137]	69.6+21.5s
+[36000/50000]	[L1: 22.8216]	69.6+21.4s
+
+Evaluation:
+[Epoch 153]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7421]	69.5+21.6s
+[36000/50000]	[L1: 22.7660]	69.2+21.2s
+
+Evaluation:
+[Epoch 154]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8980]	69.2+22.1s
+[36000/50000]	[L1: 22.8686]	69.0+21.0s
+
+Evaluation:
+[Epoch 155]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8929]	69.0+20.5s
+[36000/50000]	[L1: 22.8063]	69.1+21.7s
+
+Evaluation:
+[Epoch 156]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7498]	69.0+21.6s
+[36000/50000]	[L1: 22.8091]	68.9+22.6s
+
+Evaluation:
+[Epoch 157]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7345]	69.0+21.1s
+[36000/50000]	[L1: 22.8628]	68.9+21.4s
+
+Evaluation:
+[Epoch 158]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8890]	68.9+21.0s
+[36000/50000]	[L1: 22.8002]	68.8+20.4s
+
+Evaluation:
+[Epoch 159]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8404]	69.0+21.1s
+[36000/50000]	[L1: 22.7537]	69.1+21.0s
+
+Evaluation:
+[TEST x5]	PSNR: 38.6392 SSIM: 0.9524 (Best: 38.6437 0.9524 @epoch 119)
+Total time: 2129.44s
+
+[Epoch 160]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7894]	68.6+31.1s
+[36000/50000]	[L1: 22.7357]	68.9+31.0s
+
+Evaluation:
+[Epoch 161]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7659]	69.1+24.7s
+[36000/50000]	[L1: 22.8259]	68.7+22.9s
+
+Evaluation:
+[Epoch 162]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7373]	68.8+22.1s
+[36000/50000]	[L1: 22.7854]	68.9+22.1s
+
+Evaluation:
+[Epoch 163]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8367]	68.9+21.0s
+[36000/50000]	[L1: 22.8101]	69.0+21.7s
+
+Evaluation:
+[Epoch 164]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5704]	68.9+23.0s
+[36000/50000]	[L1: 22.7339]	69.0+22.5s
+
+Evaluation:
+[Epoch 165]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8269]	68.9+22.0s
+[36000/50000]	[L1: 22.7625]	69.2+21.5s
+
+Evaluation:
+[Epoch 166]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6160]	68.9+20.6s
+[36000/50000]	[L1: 22.6389]	68.8+21.5s
+
+Evaluation:
+[Epoch 167]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6968]	69.0+21.5s
+[36000/50000]	[L1: 22.6821]	69.2+23.8s
+
+Evaluation:
+[Epoch 168]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6362]	69.2+24.3s
+[36000/50000]	[L1: 22.6482]	68.9+22.1s
+
+Evaluation:
+[Epoch 169]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8094]	68.9+21.3s
+[36000/50000]	[L1: 22.7381]	69.0+22.0s
+
+Evaluation:
+[TEST x5]	PSNR: 38.6977 SSIM: 0.9527 (Best: 38.6977 0.9527 @epoch 169)
+Total time: 2672.28s
+
+[Epoch 170]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6234]	68.6+30.7s
+[36000/50000]	[L1: 22.6998]	68.8+30.5s
+
+Evaluation:
+[Epoch 171]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5467]	69.2+23.9s
+[36000/50000]	[L1: 22.6567]	68.7+22.0s
+
+Evaluation:
+[Epoch 172]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6519]	68.7+21.2s
+[36000/50000]	[L1: 22.7218]	68.7+21.9s
+
+Evaluation:
+[Epoch 173]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6789]	68.7+21.7s
+[36000/50000]	[L1: 22.6859]	68.7+21.7s
+
+Evaluation:
+[Epoch 174]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7301]	68.8+21.1s
+[36000/50000]	[L1: 22.7296]	68.8+21.1s
+
+Evaluation:
+[Epoch 175]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6895]	68.8+20.7s
+[36000/50000]	[L1: 22.6878]	68.7+20.8s
+
+Evaluation:
+[Epoch 176]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6641]	68.6+20.0s
+[36000/50000]	[L1: 22.6647]	68.6+20.1s
+
+Evaluation:
+[Epoch 177]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.8083]	68.8+20.8s
+[36000/50000]	[L1: 22.5705]	68.8+21.1s
+
+Evaluation:
+[Epoch 178]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6848]	68.6+20.9s
+[36000/50000]	[L1: 22.7834]	68.6+21.6s
+
+Evaluation:
+[Epoch 179]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7072]	68.7+22.6s
+[36000/50000]	[L1: 22.7335]	68.7+22.3s
+
+Evaluation:
+[TEST x5]	PSNR: 38.7122 SSIM: 0.9527 (Best: 38.7122 0.9527 @epoch 179)
+Total time: 2039.16s
+
+[Epoch 180]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6443]	68.4+31.5s
+[36000/50000]	[L1: 22.6908]	68.7+31.3s
+
+Evaluation:
+[Epoch 181]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6639]	69.0+22.0s
+[36000/50000]	[L1: 22.5984]	69.0+21.6s
+
+Evaluation:
+[Epoch 182]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6397]	69.0+21.5s
+[36000/50000]	[L1: 22.6515]	68.5+21.2s
+
+Evaluation:
+[Epoch 183]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6623]	68.8+21.1s
+[36000/50000]	[L1: 22.6578]	68.7+22.0s
+
+Evaluation:
+[Epoch 184]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5123]	68.7+24.0s
+[36000/50000]	[L1: 22.6364]	68.8+23.7s
+
+Evaluation:
+[Epoch 185]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.4816]	68.8+21.0s
+[36000/50000]	[L1: 22.4914]	68.7+21.2s
+
+Evaluation:
+[Epoch 186]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.7009]	68.6+20.1s
+[36000/50000]	[L1: 22.7377]	68.6+21.3s
+
+Evaluation:
+[Epoch 187]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5911]	68.8+21.0s
+[36000/50000]	[L1: 22.5975]	68.7+20.7s
+
+Evaluation:
+[Epoch 188]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6023]	68.6+19.7s
+[36000/50000]	[L1: 22.6617]	68.6+19.8s
+
+Evaluation:
+[Epoch 189]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6903]	68.5+20.0s
+[36000/50000]	[L1: 22.5848]	68.6+20.1s
+
+Evaluation:
+[TEST x5]	PSNR: 38.7679 SSIM: 0.9529 (Best: 38.7679 0.9529 @epoch 189)
+Total time: 2288.87s
+
+[Epoch 190]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5157]	68.4+30.4s
+[36000/50000]	[L1: 22.6155]	68.9+30.2s
+
+Evaluation:
+[Epoch 191]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6204]	69.3+23.5s
+[36000/50000]	[L1: 22.6528]	69.4+24.2s
+
+Evaluation:
+[Epoch 192]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5572]	69.1+22.2s
+[36000/50000]	[L1: 22.5332]	69.3+23.6s
+
+Evaluation:
+[Epoch 193]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.4720]	69.5+24.0s
+[36000/50000]	[L1: 22.5714]	69.2+22.6s
+
+Evaluation:
+[Epoch 194]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.4387]	69.3+24.5s
+[36000/50000]	[L1: 22.5434]	69.5+26.1s
+
+Evaluation:
+[Epoch 195]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5298]	69.3+22.7s
+[36000/50000]	[L1: 22.5572]	68.8+21.4s
+
+Evaluation:
+[Epoch 196]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.4021]	68.6+21.7s
+[36000/50000]	[L1: 22.5384]	68.9+24.5s
+
+Evaluation:
+[Epoch 197]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5812]	69.2+24.7s
+[36000/50000]	[L1: 22.5762]	68.9+21.9s
+
+Evaluation:
+[Epoch 198]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.5075]	68.7+19.8s
+[36000/50000]	[L1: 22.5767]	68.7+20.4s
+
+Evaluation:
+[Epoch 199]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.6679]	68.7+20.0s
+[36000/50000]	[L1: 22.6439]	68.7+20.0s
+
+Evaluation:
+[TEST x5]	PSNR: 38.7989 SSIM: 0.9530 (Best: 38.7989 0.9530 @epoch 199)
+Total time: 2120.81s
+
+[Epoch 200]	Learning rate: 5.00e-5
+[18000/50000]	[L1: 22.3981]	68.7+30.9s
+[36000/50000]	[L1: 22.4295]	69.0+30.9s
+
+Evaluation:
+[Epoch 201]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3252]	69.0+21.1s
+[36000/50000]	[L1: 22.3460]	69.0+21.2s
+
+Evaluation:
+[Epoch 202]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4690]	69.2+21.7s
+[36000/50000]	[L1: 22.3476]	69.2+22.6s
+
+Evaluation:
+[Epoch 203]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2191]	69.4+24.0s
+[36000/50000]	[L1: 22.2783]	69.2+23.4s
+
+Evaluation:
+[Epoch 204]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4097]	69.2+20.4s
+[36000/50000]	[L1: 22.3927]	69.2+21.3s
+
+Evaluation:
+[Epoch 205]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3513]	69.2+21.4s
+[36000/50000]	[L1: 22.3807]	69.3+22.9s
+
+Evaluation:
+[Epoch 206]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3932]	69.3+22.7s
+[36000/50000]	[L1: 22.4451]	68.8+21.2s
+
+Evaluation:
+[Epoch 207]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4676]	68.7+20.1s
+[36000/50000]	[L1: 22.4889]	68.7+20.2s
+
+Evaluation:
+[Epoch 208]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4206]	68.6+19.9s
+[36000/50000]	[L1: 22.3557]	68.7+20.0s
+
+Evaluation:
+[Epoch 209]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4843]	68.5+20.0s
+[36000/50000]	[L1: 22.4660]	68.7+19.9s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8467 SSIM: 0.9532 (Best: 38.8467 0.9532 @epoch 209)
+Total time: 2226.04s
+
+[Epoch 210]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4448]	68.3+31.4s
+[36000/50000]	[L1: 22.3622]	68.8+31.1s
+
+Evaluation:
+[Epoch 211]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2278]	69.0+23.2s
+[36000/50000]	[L1: 22.2846]	69.7+26.0s
+
+Evaluation:
+[Epoch 212]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3607]	69.2+22.1s
+[36000/50000]	[L1: 22.3639]	69.0+21.9s
+
+Evaluation:
+[Epoch 213]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.5040]	69.2+21.8s
+[36000/50000]	[L1: 22.4116]	69.2+21.5s
+
+Evaluation:
+[Epoch 214]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4844]	69.0+21.1s
+[36000/50000]	[L1: 22.3552]	69.0+22.0s
+
+Evaluation:
+[Epoch 215]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1856]	69.4+23.7s
+[36000/50000]	[L1: 22.2884]	69.3+23.1s
+
+Evaluation:
+[Epoch 216]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3339]	69.2+22.2s
+[36000/50000]	[L1: 22.3547]	69.1+21.7s
+
+Evaluation:
+[Epoch 217]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4579]	69.3+21.0s
+[36000/50000]	[L1: 22.4044]	69.1+20.5s
+
+Evaluation:
+[Epoch 218]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2307]	68.6+20.1s
+[36000/50000]	[L1: 22.4293]	68.5+20.2s
+
+Evaluation:
+[Epoch 219]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4631]	68.5+19.8s
+[36000/50000]	[L1: 22.3736]	68.6+20.6s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8538 SSIM: 0.9533 (Best: 38.8538 0.9533 @epoch 219)
+Total time: 1998.22s
+
+[Epoch 220]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3425]	68.5+30.0s
+[36000/50000]	[L1: 22.3189]	68.9+30.2s
+
+Evaluation:
+[Epoch 221]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.5388]	69.3+23.6s
+[36000/50000]	[L1: 22.4459]	69.1+22.3s
+
+Evaluation:
+[Epoch 222]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3933]	69.1+22.6s
+[36000/50000]	[L1: 22.3735]	69.2+21.5s
+
+Evaluation:
+[Epoch 223]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4738]	69.5+24.1s
+[36000/50000]	[L1: 22.4241]	69.2+21.5s
+
+Evaluation:
+[Epoch 224]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.5114]	69.2+23.8s
+[36000/50000]	[L1: 22.4741]	69.2+22.1s
+
+Evaluation:
+[Epoch 225]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3471]	69.1+21.0s
+[36000/50000]	[L1: 22.3753]	69.1+21.4s
+
+Evaluation:
+[Epoch 226]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1518]	68.8+21.2s
+[36000/50000]	[L1: 22.2264]	68.6+21.4s
+
+Evaluation:
+[Epoch 227]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1957]	68.6+20.8s
+[36000/50000]	[L1: 22.3176]	68.7+20.7s
+
+Evaluation:
+[Epoch 228]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4133]	68.6+19.9s
+[36000/50000]	[L1: 22.4512]	68.8+20.3s
+
+Evaluation:
+[Epoch 229]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3509]	68.8+20.7s
+[36000/50000]	[L1: 22.3900]	68.8+20.9s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8482 SSIM: 0.9533 (Best: 38.8538 0.9533 @epoch 219)
+Total time: 1744.06s
+
+[Epoch 230]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3867]	68.5+30.8s
+[36000/50000]	[L1: 22.3558]	68.9+30.8s
+
+Evaluation:
+[Epoch 231]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.5154]	69.3+21.9s
+[36000/50000]	[L1: 22.3591]	69.4+21.3s
+
+Evaluation:
+[Epoch 232]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2552]	69.4+19.9s
+[36000/50000]	[L1: 22.2652]	69.3+20.6s
+
+Evaluation:
+[Epoch 233]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4020]	69.4+20.9s
+[36000/50000]	[L1: 22.2759]	69.4+21.0s
+
+Evaluation:
+[Epoch 234]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3107]	69.5+21.4s
+[36000/50000]	[L1: 22.2497]	69.5+21.6s
+
+Evaluation:
+[Epoch 235]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4322]	69.5+21.2s
+[36000/50000]	[L1: 22.3472]	69.7+22.3s
+
+Evaluation:
+[Epoch 236]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3999]	69.5+22.2s
+[36000/50000]	[L1: 22.3736]	69.5+23.5s
+
+Evaluation:
+[Epoch 237]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3799]	69.5+22.0s
+[36000/50000]	[L1: 22.3359]	69.3+20.6s
+
+Evaluation:
+[Epoch 238]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1112]	69.4+20.6s
+[36000/50000]	[L1: 22.2021]	69.4+19.8s
+
+Evaluation:
+[Epoch 239]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4297]	69.5+20.4s
+[36000/50000]	[L1: 22.3417]	69.5+20.5s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8714 SSIM: 0.9535 (Best: 38.8714 0.9535 @epoch 239)
+Total time: 2119.69s
+
+[Epoch 240]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1990]	68.4+29.7s
+[36000/50000]	[L1: 22.2193]	68.7+29.6s
+
+Evaluation:
+[Epoch 241]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2707]	68.9+20.3s
+[36000/50000]	[L1: 22.2843]	69.1+21.0s
+
+Evaluation:
+[Epoch 242]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3994]	68.9+20.6s
+[36000/50000]	[L1: 22.3384]	68.9+21.1s
+
+Evaluation:
+[Epoch 243]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3159]	69.1+20.1s
+[36000/50000]	[L1: 22.3269]	69.1+20.3s
+
+Evaluation:
+[Epoch 244]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4213]	69.1+22.3s
+[36000/50000]	[L1: 22.3417]	69.0+22.0s
+
+Evaluation:
+[Epoch 245]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2695]	68.9+21.2s
+[36000/50000]	[L1: 22.2166]	68.7+20.6s
+
+Evaluation:
+[Epoch 246]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4131]	68.7+20.2s
+[36000/50000]	[L1: 22.3405]	68.7+20.5s
+
+Evaluation:
+[Epoch 247]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2717]	68.7+20.8s
+[36000/50000]	[L1: 22.2943]	68.6+20.6s
+
+Evaluation:
+[Epoch 248]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3341]	68.8+22.1s
+[36000/50000]	[L1: 22.3102]	68.8+21.6s
+
+Evaluation:
+[Epoch 249]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3328]	68.7+20.9s
+[36000/50000]	[L1: 22.3011]	68.7+20.6s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8784 SSIM: 0.9534 (Best: 38.8784 0.9534 @epoch 249)
+Total time: 1870.21s
+
+[Epoch 250]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2911]	68.5+30.8s
+[36000/50000]	[L1: 22.3440]	68.9+30.7s
+
+Evaluation:
+[Epoch 251]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2718]	68.8+22.4s
+[36000/50000]	[L1: 22.2653]	69.0+22.6s
+
+Evaluation:
+[Epoch 252]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3753]	68.9+21.0s
+[36000/50000]	[L1: 22.3184]	69.0+21.2s
+
+Evaluation:
+[Epoch 253]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2890]	68.7+20.9s
+[36000/50000]	[L1: 22.2641]	68.7+20.9s
+
+Evaluation:
+[Epoch 254]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1667]	68.7+21.2s
+[36000/50000]	[L1: 22.2252]	68.8+21.7s
+
+Evaluation:
+[Epoch 255]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2266]	68.7+21.4s
+[36000/50000]	[L1: 22.1903]	68.7+20.8s
+
+Evaluation:
+[Epoch 256]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3881]	68.6+20.9s
+[36000/50000]	[L1: 22.3344]	68.9+22.4s
+
+Evaluation:
+[Epoch 257]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1795]	68.7+21.7s
+[36000/50000]	[L1: 22.2041]	68.7+22.4s
+
+Evaluation:
+[Epoch 258]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2816]	68.6+21.5s
+[36000/50000]	[L1: 22.2705]	68.7+21.2s
+
+Evaluation:
+[Epoch 259]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2244]	68.6+20.1s
+[36000/50000]	[L1: 22.2514]	68.6+20.2s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8969 SSIM: 0.9535 (Best: 38.8969 0.9535 @epoch 259)
+Total time: 1832.81s
+
+[Epoch 260]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3060]	68.3+31.0s
+[36000/50000]	[L1: 22.3215]	68.7+31.7s
+
+Evaluation:
+[Epoch 261]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3306]	69.0+22.5s
+[36000/50000]	[L1: 22.2627]	69.3+24.3s
+
+Evaluation:
+[Epoch 262]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2134]	69.4+21.7s
+[36000/50000]	[L1: 22.1825]	69.6+23.0s
+
+Evaluation:
+[Epoch 263]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2928]	69.1+20.7s
+[36000/50000]	[L1: 22.2589]	69.0+20.9s
+
+Evaluation:
+[Epoch 264]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2029]	68.9+21.3s
+[36000/50000]	[L1: 22.2954]	69.0+21.1s
+
+Evaluation:
+[Epoch 265]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2376]	68.8+22.0s
+[36000/50000]	[L1: 22.2435]	68.8+21.5s
+
+Evaluation:
+[Epoch 266]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4647]	68.9+20.8s
+[36000/50000]	[L1: 22.3323]	69.0+21.2s
+
+Evaluation:
+[Epoch 267]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.4033]	69.1+20.7s
+[36000/50000]	[L1: 22.3050]	69.0+21.1s
+
+Evaluation:
+[Epoch 268]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1119]	68.9+21.1s
+[36000/50000]	[L1: 22.1847]	69.0+21.0s
+
+Evaluation:
+[Epoch 269]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1028]	69.0+20.6s
+[36000/50000]	[L1: 22.1926]	69.0+20.9s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9297 SSIM: 0.9537 (Best: 38.9297 0.9537 @epoch 269)
+Total time: 1829.45s
+
+[Epoch 270]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2296]	68.6+31.0s
+[36000/50000]	[L1: 22.2152]	68.9+30.9s
+
+Evaluation:
+[Epoch 271]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2844]	69.0+25.1s
+[36000/50000]	[L1: 22.2167]	68.8+23.7s
+
+Evaluation:
+[Epoch 272]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2106]	68.9+21.2s
+[36000/50000]	[L1: 22.2775]	69.0+21.9s
+
+Evaluation:
+[Epoch 273]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3036]	68.8+21.2s
+[36000/50000]	[L1: 22.2661]	68.6+21.0s
+
+Evaluation:
+[Epoch 274]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3255]	68.6+21.2s
+[36000/50000]	[L1: 22.2866]	68.7+22.2s
+
+Evaluation:
+[Epoch 275]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.0447]	68.7+21.0s
+[36000/50000]	[L1: 22.1183]	68.7+20.7s
+
+Evaluation:
+[Epoch 276]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1189]	68.5+20.7s
+[36000/50000]	[L1: 22.1974]	68.7+20.9s
+
+Evaluation:
+[Epoch 277]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1713]	68.5+20.2s
+[36000/50000]	[L1: 22.2095]	68.6+20.6s
+
+Evaluation:
+[Epoch 278]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1983]	68.7+20.8s
+[36000/50000]	[L1: 22.2267]	68.7+21.0s
+
+Evaluation:
+[Epoch 279]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1689]	68.5+21.4s
+[36000/50000]	[L1: 22.2690]	68.5+21.3s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8916 SSIM: 0.9535 (Best: 38.9297 0.9537 @epoch 269)
+Total time: 1788.87s
+
+[Epoch 280]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.0780]	68.5+30.8s
+[36000/50000]	[L1: 22.2160]	68.7+30.7s
+
+Evaluation:
+[Epoch 281]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1794]	68.9+24.8s
+[36000/50000]	[L1: 22.2207]	69.4+25.8s
+
+Evaluation:
+[Epoch 282]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.3225]	69.3+24.1s
+[36000/50000]	[L1: 22.2413]	69.7+23.7s
+
+Evaluation:
+[Epoch 283]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2308]	69.1+20.8s
+[36000/50000]	[L1: 22.2100]	69.1+22.0s
+
+Evaluation:
+[Epoch 284]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1813]	69.2+21.3s
+[36000/50000]	[L1: 22.2064]	69.2+21.4s
+
+Evaluation:
+[Epoch 285]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2491]	69.2+20.4s
+[36000/50000]	[L1: 22.2241]	69.1+20.6s
+
+Evaluation:
+[Epoch 286]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2340]	69.2+20.3s
+[36000/50000]	[L1: 22.2424]	69.2+20.2s
+
+Evaluation:
+[Epoch 287]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2122]	69.1+19.9s
+[36000/50000]	[L1: 22.2059]	69.1+20.9s
+
+Evaluation:
+[Epoch 288]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1423]	69.2+20.8s
+[36000/50000]	[L1: 22.1715]	69.1+21.1s
+
+Evaluation:
+[Epoch 289]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1578]	69.2+22.1s
+[36000/50000]	[L1: 22.1639]	69.1+23.1s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9328 SSIM: 0.9537 (Best: 38.9328 0.9537 @epoch 289)
+Total time: 1661.92s
+
+[Epoch 290]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1833]	68.6+29.8s
+[36000/50000]	[L1: 22.1812]	68.9+30.2s
+
+Evaluation:
+[Epoch 291]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.0108]	69.5+24.3s
+[36000/50000]	[L1: 22.0948]	69.7+24.1s
+
+Evaluation:
+[Epoch 292]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1862]	69.5+24.4s
+[36000/50000]	[L1: 22.1690]	68.9+22.0s
+
+Evaluation:
+[Epoch 293]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2327]	68.6+20.8s
+[36000/50000]	[L1: 22.2243]	68.9+24.9s
+
+Evaluation:
+[Epoch 294]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.2505]	69.0+22.6s
+[36000/50000]	[L1: 22.2092]	69.0+23.2s
+
+Evaluation:
+[Epoch 295]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1136]	68.8+21.1s
+[36000/50000]	[L1: 22.0900]	68.9+21.8s
+
+Evaluation:
+[Epoch 296]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.0253]	68.9+21.2s
+[36000/50000]	[L1: 22.1552]	68.9+22.3s
+
+Evaluation:
+[Epoch 297]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 21.9770]	69.1+22.5s
+[36000/50000]	[L1: 22.0799]	68.9+21.6s
+
+Evaluation:
+[Epoch 298]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1174]	68.8+20.6s
+[36000/50000]	[L1: 22.1610]	68.8+20.8s
+
+Evaluation:
+[Epoch 299]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 21.9969]	68.9+21.1s
+[36000/50000]	[L1: 22.0669]	69.0+21.3s
+
+Evaluation:
+[TEST x5]	PSNR: 38.8763 SSIM: 0.9535 (Best: 38.9328 0.9537 @epoch 289)
+Total time: 2039.59s
+
+[Epoch 300]	Learning rate: 2.50e-5
+[18000/50000]	[L1: 22.1217]	68.7+29.7s
+[36000/50000]	[L1: 22.1785]	69.0+29.8s
+
+Evaluation:
+[Epoch 301]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0457]	69.5+20.6s
+[36000/50000]	[L1: 22.0831]	69.8+22.8s
+
+Evaluation:
+[Epoch 302]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1988]	69.6+21.5s
+[36000/50000]	[L1: 22.1265]	69.4+21.8s
+
+Evaluation:
+[Epoch 303]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1050]	69.0+21.9s
+[36000/50000]	[L1: 22.0813]	68.9+21.8s
+
+Evaluation:
+[Epoch 304]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0771]	69.0+21.6s
+[36000/50000]	[L1: 22.1302]	68.9+21.5s
+
+Evaluation:
+[Epoch 305]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0872]	68.9+21.9s
+[36000/50000]	[L1: 22.1415]	68.9+22.2s
+
+Evaluation:
+[Epoch 306]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0983]	69.1+21.4s
+[36000/50000]	[L1: 22.0971]	69.0+21.4s
+
+Evaluation:
+[Epoch 307]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0445]	69.0+20.9s
+[36000/50000]	[L1: 22.1084]	69.1+21.4s
+
+Evaluation:
+[Epoch 308]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0591]	68.8+20.1s
+[36000/50000]	[L1: 22.0967]	68.9+20.7s
+
+Evaluation:
+[Epoch 309]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0260]	69.3+19.9s
+[36000/50000]	[L1: 22.1090]	68.7+19.8s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9268 SSIM: 0.9537 (Best: 38.9328 0.9537 @epoch 289)
+Total time: 2649.16s
+
+[Epoch 310]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0050]	68.8+28.6s
+[36000/50000]	[L1: 22.0728]	68.9+28.3s
+
+Evaluation:
+[Epoch 311]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.2067]	69.0+20.0s
+[36000/50000]	[L1: 22.1857]	68.9+21.0s
+
+Evaluation:
+[Epoch 312]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1458]	68.9+19.9s
+[36000/50000]	[L1: 22.1375]	69.0+19.9s
+
+Evaluation:
+[Epoch 313]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1533]	68.9+19.3s
+[36000/50000]	[L1: 22.1223]	68.9+19.0s
+
+Evaluation:
+[Epoch 314]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0282]	68.9+19.0s
+[36000/50000]	[L1: 22.0871]	68.9+19.0s
+
+Evaluation:
+[Epoch 315]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0833]	68.8+19.2s
+[36000/50000]	[L1: 22.1165]	68.8+19.0s
+
+Evaluation:
+[Epoch 316]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1342]	68.8+19.1s
+[36000/50000]	[L1: 21.9718]	68.9+19.1s
+
+Evaluation:
+[Epoch 317]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0218]	69.0+18.9s
+[36000/50000]	[L1: 22.0471]	69.1+19.1s
+
+Evaluation:
+[Epoch 318]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1030]	68.9+19.1s
+[36000/50000]	[L1: 22.1043]	68.9+19.1s
+
+Evaluation:
+[Epoch 319]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1550]	69.0+19.0s
+[36000/50000]	[L1: 22.1371]	69.0+18.9s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9742 SSIM: 0.9538 (Best: 38.9742 0.9538 @epoch 319)
+Total time: 3182.98s
+
+[Epoch 320]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0718]	68.2+24.8s
+[36000/50000]	[L1: 22.0477]	68.3+24.7s
+
+Evaluation:
+[Epoch 321]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8878]	68.4+19.1s
+[36000/50000]	[L1: 21.9802]	68.5+19.1s
+
+Evaluation:
+[Epoch 322]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9418]	69.0+19.1s
+[36000/50000]	[L1: 22.1173]	69.1+19.1s
+
+Evaluation:
+[Epoch 323]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1097]	69.2+19.1s
+[36000/50000]	[L1: 22.1341]	69.3+19.1s
+
+Evaluation:
+[Epoch 324]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0954]	69.2+19.2s
+[36000/50000]	[L1: 22.1424]	69.1+19.2s
+
+Evaluation:
+[Epoch 325]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1152]	69.3+19.0s
+[36000/50000]	[L1: 22.1136]	69.2+19.1s
+
+Evaluation:
+[Epoch 326]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1719]	69.2+19.1s
+[36000/50000]	[L1: 22.0824]	69.2+19.1s
+
+Evaluation:
+[Epoch 327]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9626]	69.1+19.1s
+[36000/50000]	[L1: 22.0077]	69.1+19.3s
+
+Evaluation:
+[Epoch 328]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8383]	69.3+19.1s
+[36000/50000]	[L1: 22.0179]	69.2+19.1s
+
+Evaluation:
+[Epoch 329]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0960]	69.1+19.2s
+[36000/50000]	[L1: 22.0687]	69.1+19.2s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9311 SSIM: 0.9537 (Best: 38.9742 0.9538 @epoch 319)
+Total time: 2186.82s
+
+[Epoch 330]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1298]	68.7+29.7s
+[36000/50000]	[L1: 22.0634]	68.8+29.3s
+
+Evaluation:
+[Epoch 331]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0639]	69.1+23.6s
+[36000/50000]	[L1: 22.0816]	69.3+24.3s
+
+Evaluation:
+[Epoch 332]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0785]	69.4+24.7s
+[36000/50000]	[L1: 22.0874]	69.6+25.5s
+
+Evaluation:
+[Epoch 333]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0787]	69.6+22.9s
+[36000/50000]	[L1: 22.0818]	69.2+21.6s
+
+Evaluation:
+[Epoch 334]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1067]	69.2+23.0s
+[36000/50000]	[L1: 22.1206]	68.9+21.9s
+
+Evaluation:
+[Epoch 335]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9662]	68.8+21.2s
+[36000/50000]	[L1: 22.0149]	68.9+21.4s
+
+Evaluation:
+[Epoch 336]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0177]	68.8+21.3s
+[36000/50000]	[L1: 22.0421]	68.7+21.0s
+
+Evaluation:
+[Epoch 337]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8926]	68.5+19.4s
+[36000/50000]	[L1: 22.0135]	68.5+19.3s
+
+Evaluation:
+[Epoch 338]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0841]	68.8+19.2s
+[36000/50000]	[L1: 22.0351]	69.0+21.6s
+
+Evaluation:
+[Epoch 339]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0316]	68.8+20.9s
+[36000/50000]	[L1: 22.1257]	68.8+21.0s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9858 SSIM: 0.9540 (Best: 38.9858 0.9540 @epoch 339)
+Total time: 2059.97s
+
+[Epoch 340]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1326]	68.2+29.1s
+[36000/50000]	[L1: 22.1051]	68.3+29.6s
+
+Evaluation:
+[Epoch 341]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1068]	68.6+19.2s
+[36000/50000]	[L1: 22.0187]	69.0+19.3s
+
+Evaluation:
+[Epoch 342]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0909]	69.2+19.2s
+[36000/50000]	[L1: 22.0861]	69.2+19.2s
+
+Evaluation:
+[Epoch 343]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1390]	69.0+19.2s
+[36000/50000]	[L1: 22.0209]	69.1+19.3s
+
+Evaluation:
+[Epoch 344]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0310]	69.2+19.1s
+[36000/50000]	[L1: 22.0433]	69.2+19.1s
+
+Evaluation:
+[Epoch 345]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9646]	69.1+19.3s
+[36000/50000]	[L1: 22.0590]	69.1+19.2s
+
+Evaluation:
+[Epoch 346]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0046]	69.2+19.5s
+[36000/50000]	[L1: 22.0213]	69.1+19.3s
+
+Evaluation:
+[Epoch 347]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0583]	69.2+19.2s
+[36000/50000]	[L1: 21.9853]	69.3+19.2s
+
+Evaluation:
+[Epoch 348]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0684]	69.2+19.5s
+[36000/50000]	[L1: 22.0145]	69.1+19.3s
+
+Evaluation:
+[Epoch 349]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9372]	69.1+19.4s
+[36000/50000]	[L1: 22.0230]	69.2+20.0s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9614 SSIM: 0.9538 (Best: 38.9858 0.9540 @epoch 339)
+Total time: 1587.10s
+
+[Epoch 350]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0689]	68.4+21.7s
+[36000/50000]	[L1: 22.0733]	68.5+21.9s
+
+Evaluation:
+[Epoch 351]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9508]	68.8+19.4s
+[36000/50000]	[L1: 21.9948]	68.8+19.4s
+
+Evaluation:
+[Epoch 352]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0960]	68.9+19.4s
+[36000/50000]	[L1: 22.0402]	68.9+19.3s
+
+Evaluation:
+[Epoch 353]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1311]	68.8+19.5s
+[36000/50000]	[L1: 22.0488]	68.8+19.5s
+
+Evaluation:
+[Epoch 354]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0847]	68.8+19.6s
+[36000/50000]	[L1: 22.0569]	68.8+19.5s
+
+Evaluation:
+[Epoch 355]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1458]	68.8+19.5s
+[36000/50000]	[L1: 22.1138]	68.8+19.6s
+
+Evaluation:
+[Epoch 356]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8891]	68.9+19.4s
+[36000/50000]	[L1: 21.9349]	69.0+19.7s
+
+Evaluation:
+[Epoch 357]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1164]	69.0+19.6s
+[36000/50000]	[L1: 22.0890]	69.0+19.5s
+
+Evaluation:
+[Epoch 358]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1469]	68.8+19.4s
+[36000/50000]	[L1: 22.0572]	68.9+19.9s
+
+Evaluation:
+[Epoch 359]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0271]	69.0+19.4s
+[36000/50000]	[L1: 22.0541]	68.9+19.4s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9638 SSIM: 0.9538 (Best: 38.9858 0.9540 @epoch 339)
+Total time: 1844.47s
+
+[Epoch 360]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9275]	68.5+31.8s
+[36000/50000]	[L1: 21.9987]	68.9+31.6s
+
+Evaluation:
+[Epoch 361]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1326]	68.9+24.3s
+[36000/50000]	[L1: 22.0690]	68.8+24.5s
+
+Evaluation:
+[Epoch 362]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9140]	68.7+23.2s
+[36000/50000]	[L1: 21.9594]	68.9+25.4s
+
+Evaluation:
+[Epoch 363]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0223]	68.8+23.1s
+[36000/50000]	[L1: 22.0074]	68.6+21.8s
+
+Evaluation:
+[Epoch 364]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0108]	68.7+20.6s
+[36000/50000]	[L1: 22.0252]	68.7+21.1s
+
+Evaluation:
+[Epoch 365]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1176]	68.6+21.6s
+[36000/50000]	[L1: 22.0106]	68.6+21.3s
+
+Evaluation:
+[Epoch 366]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0638]	68.6+20.9s
+[36000/50000]	[L1: 22.0998]	68.7+21.1s
+
+Evaluation:
+[Epoch 367]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9348]	68.7+19.7s
+[36000/50000]	[L1: 21.9727]	68.7+20.0s
+
+Evaluation:
+[Epoch 368]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1162]	68.5+20.2s
+[36000/50000]	[L1: 22.0925]	68.6+20.4s
+
+Evaluation:
+[Epoch 369]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9707]	68.7+19.6s
+[36000/50000]	[L1: 22.0511]	68.7+19.7s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9479 SSIM: 0.9537 (Best: 38.9858 0.9540 @epoch 339)
+Total time: 2100.59s
+
+[Epoch 370]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8533]	68.6+31.4s
+[36000/50000]	[L1: 21.9689]	68.9+31.4s
+
+Evaluation:
+[Epoch 371]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0508]	68.9+22.2s
+[36000/50000]	[L1: 22.0467]	69.2+24.0s
+
+Evaluation:
+[Epoch 372]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9997]	69.1+22.4s
+[36000/50000]	[L1: 22.0098]	69.1+23.1s
+
+Evaluation:
+[Epoch 373]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0582]	69.2+22.0s
+[36000/50000]	[L1: 22.0420]	69.2+21.9s
+
+Evaluation:
+[Epoch 374]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0577]	69.0+21.2s
+[36000/50000]	[L1: 22.0805]	68.9+21.6s
+
+Evaluation:
+[Epoch 375]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1497]	69.3+23.2s
+[36000/50000]	[L1: 22.0569]	69.2+23.1s
+
+Evaluation:
+[Epoch 376]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0274]	69.3+21.7s
+[36000/50000]	[L1: 22.0377]	69.2+21.4s
+
+Evaluation:
+[Epoch 377]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9359]	69.0+21.5s
+[36000/50000]	[L1: 22.0180]	69.1+22.1s
+
+Evaluation:
+[Epoch 378]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9358]	69.4+24.3s
+[36000/50000]	[L1: 22.0584]	69.5+24.5s
+
+Evaluation:
+[Epoch 379]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0945]	69.0+22.1s
+[36000/50000]	[L1: 22.0174]	69.0+20.8s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9833 SSIM: 0.9539 (Best: 38.9858 0.9540 @epoch 339)
+Total time: 2298.04s
+
+[Epoch 380]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9485]	68.4+31.1s
+[36000/50000]	[L1: 21.9110]	68.8+30.9s
+
+Evaluation:
+[Epoch 381]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8981]	68.9+22.3s
+[36000/50000]	[L1: 21.9586]	69.0+23.1s
+
+Evaluation:
+[Epoch 382]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1859]	69.4+23.4s
+[36000/50000]	[L1: 22.1135]	69.2+22.0s
+
+Evaluation:
+[Epoch 383]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9973]	69.1+21.8s
+[36000/50000]	[L1: 21.9567]	68.6+21.6s
+
+Evaluation:
+[Epoch 384]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0305]	68.7+21.3s
+[36000/50000]	[L1: 21.9451]	68.8+21.7s
+
+Evaluation:
+[Epoch 385]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0319]	68.8+21.4s
+[36000/50000]	[L1: 22.0315]	68.8+21.2s
+
+Evaluation:
+[Epoch 386]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9995]	68.8+22.2s
+[36000/50000]	[L1: 22.0093]	68.5+20.5s
+
+Evaluation:
+[Epoch 387]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0913]	68.8+20.4s
+[36000/50000]	[L1: 21.9946]	69.0+21.4s
+
+Evaluation:
+[Epoch 388]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0933]	68.8+20.8s
+[36000/50000]	[L1: 22.0040]	68.8+20.9s
+
+Evaluation:
+[Epoch 389]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.1377]	68.6+19.8s
+[36000/50000]	[L1: 22.0802]	68.7+19.6s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9711 SSIM: 0.9538 (Best: 38.9858 0.9540 @epoch 339)
+Total time: 1720.03s
+
+[Epoch 390]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0521]	68.5+30.9s
+[36000/50000]	[L1: 21.9994]	68.7+30.6s
+
+Evaluation:
+[Epoch 391]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0455]	69.4+21.8s
+[36000/50000]	[L1: 22.0261]	69.5+22.5s
+
+Evaluation:
+[Epoch 392]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0499]	69.3+21.2s
+[36000/50000]	[L1: 22.0003]	69.4+21.5s
+
+Evaluation:
+[Epoch 393]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9697]	69.5+21.5s
+[36000/50000]	[L1: 22.0179]	69.4+21.4s
+
+Evaluation:
+[Epoch 394]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9939]	69.5+21.2s
+[36000/50000]	[L1: 22.0490]	69.3+21.9s
+
+Evaluation:
+[Epoch 395]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8528]	69.5+21.8s
+[36000/50000]	[L1: 21.9748]	69.6+22.3s
+
+Evaluation:
+[Epoch 396]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 22.0450]	69.4+21.1s
+[36000/50000]	[L1: 22.0712]	69.4+20.7s
+
+Evaluation:
+[Epoch 397]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8257]	69.5+20.3s
+[36000/50000]	[L1: 21.8987]	69.5+20.4s
+
+Evaluation:
+[Epoch 398]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8495]	69.4+20.6s
+[36000/50000]	[L1: 21.9943]	69.3+20.8s
+
+Evaluation:
+[Epoch 399]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.8547]	69.3+20.0s
+[36000/50000]	[L1: 21.9578]	69.4+20.3s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0172 SSIM: 0.9541 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 1800.97s
+
+[Epoch 400]	Learning rate: 1.25e-5
+[18000/50000]	[L1: 21.9070]	68.5+31.6s
+[36000/50000]	[L1: 21.9656]	68.8+30.9s
+
+Evaluation:
+[Epoch 401]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8192]	69.0+22.8s
+[36000/50000]	[L1: 21.9184]	69.3+24.7s
+
+Evaluation:
+[Epoch 402]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9706]	69.0+22.9s
+[36000/50000]	[L1: 21.9100]	69.1+21.4s
+
+Evaluation:
+[Epoch 403]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9967]	69.4+22.9s
+[36000/50000]	[L1: 21.9742]	69.1+21.7s
+
+Evaluation:
+[Epoch 404]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8757]	68.7+22.5s
+[36000/50000]	[L1: 22.0118]	68.8+23.1s
+
+Evaluation:
+[Epoch 405]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8917]	68.7+22.0s
+[36000/50000]	[L1: 21.9753]	69.1+23.1s
+
+Evaluation:
+[Epoch 406]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9088]	69.0+23.0s
+[36000/50000]	[L1: 21.9240]	68.5+21.0s
+
+Evaluation:
+[Epoch 407]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8561]	68.8+21.8s
+[36000/50000]	[L1: 21.9516]	68.8+21.0s
+
+Evaluation:
+[Epoch 408]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9849]	68.9+20.8s
+[36000/50000]	[L1: 21.9668]	68.8+20.3s
+
+Evaluation:
+[Epoch 409]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9732]	68.7+20.2s
+[36000/50000]	[L1: 21.9585]	68.8+20.0s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0133 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2046.16s
+
+[Epoch 410]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9363]	68.4+29.3s
+[36000/50000]	[L1: 21.8914]	68.8+29.3s
+
+Evaluation:
+[Epoch 411]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9847]	68.9+19.4s
+[36000/50000]	[L1: 21.9626]	69.1+19.7s
+
+Evaluation:
+[Epoch 412]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7950]	69.0+20.0s
+[36000/50000]	[L1: 21.8983]	69.0+20.7s
+
+Evaluation:
+[Epoch 413]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9940]	69.1+20.6s
+[36000/50000]	[L1: 22.0590]	69.2+21.7s
+
+Evaluation:
+[Epoch 414]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0366]	69.2+21.6s
+[36000/50000]	[L1: 21.9571]	69.2+20.9s
+
+Evaluation:
+[Epoch 415]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9136]	68.9+19.8s
+[36000/50000]	[L1: 21.9327]	68.7+19.7s
+
+Evaluation:
+[Epoch 416]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0507]	68.7+19.6s
+[36000/50000]	[L1: 21.9653]	68.5+19.6s
+
+Evaluation:
+[Epoch 417]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8476]	68.5+19.5s
+[36000/50000]	[L1: 21.8917]	68.6+19.7s
+
+Evaluation:
+[Epoch 418]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0272]	68.7+20.0s
+[36000/50000]	[L1: 21.9462]	68.6+20.2s
+
+Evaluation:
+[Epoch 419]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7975]	68.7+21.2s
+[36000/50000]	[L1: 21.9262]	68.8+22.1s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0124 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2071.34s
+
+[Epoch 420]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0253]	68.4+28.8s
+[36000/50000]	[L1: 21.9758]	68.8+29.2s
+
+Evaluation:
+[Epoch 421]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9457]	69.1+22.5s
+[36000/50000]	[L1: 21.9971]	69.1+21.0s
+
+Evaluation:
+[Epoch 422]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0859]	69.2+20.6s
+[36000/50000]	[L1: 22.0403]	69.1+20.0s
+
+Evaluation:
+[Epoch 423]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9849]	69.0+20.2s
+[36000/50000]	[L1: 21.9751]	69.1+19.5s
+
+Evaluation:
+[Epoch 424]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8600]	69.2+20.2s
+[36000/50000]	[L1: 21.9136]	69.3+20.9s
+
+Evaluation:
+[Epoch 425]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0432]	69.3+23.3s
+[36000/50000]	[L1: 22.0292]	69.3+22.7s
+
+Evaluation:
+[Epoch 426]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9679]	69.0+21.0s
+[36000/50000]	[L1: 21.9377]	69.1+22.3s
+
+Evaluation:
+[Epoch 427]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0279]	69.2+22.0s
+[36000/50000]	[L1: 22.0200]	69.3+22.6s
+
+Evaluation:
+[Epoch 428]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8647]	69.1+22.3s
+[36000/50000]	[L1: 21.9119]	69.2+23.7s
+
+Evaluation:
+[Epoch 429]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9631]	69.1+21.5s
+[36000/50000]	[L1: 21.9753]	69.1+21.0s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9888 SSIM: 0.9539 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2073.52s
+
+[Epoch 430]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9071]	68.6+30.1s
+[36000/50000]	[L1: 21.9270]	68.9+30.1s
+
+Evaluation:
+[Epoch 431]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0509]	68.8+21.2s
+[36000/50000]	[L1: 22.0192]	68.9+20.9s
+
+Evaluation:
+[Epoch 432]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0258]	68.9+19.5s
+[36000/50000]	[L1: 22.0173]	68.9+19.6s
+
+Evaluation:
+[Epoch 433]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9714]	68.8+19.4s
+[36000/50000]	[L1: 21.9063]	68.7+19.5s
+
+Evaluation:
+[Epoch 434]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9293]	68.7+19.6s
+[36000/50000]	[L1: 21.9451]	68.7+19.6s
+
+Evaluation:
+[Epoch 435]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9348]	68.7+19.5s
+[36000/50000]	[L1: 21.9295]	68.8+19.5s
+
+Evaluation:
+[Epoch 436]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0311]	68.7+19.4s
+[36000/50000]	[L1: 21.9392]	68.6+19.6s
+
+Evaluation:
+[Epoch 437]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9302]	68.8+19.4s
+[36000/50000]	[L1: 22.0145]	68.7+19.5s
+
+Evaluation:
+[Epoch 438]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7473]	68.8+19.6s
+[36000/50000]	[L1: 21.8720]	68.7+19.5s
+
+Evaluation:
+[Epoch 439]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0253]	68.8+20.8s
+[36000/50000]	[L1: 21.9206]	68.8+21.9s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9813 SSIM: 0.9539 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2106.71s
+
+[Epoch 440]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8683]	68.3+30.4s
+[36000/50000]	[L1: 21.8800]	68.5+29.9s
+
+Evaluation:
+[Epoch 441]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8909]	69.2+22.7s
+[36000/50000]	[L1: 21.8622]	69.4+23.8s
+
+Evaluation:
+[Epoch 442]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9650]	69.5+26.6s
+[36000/50000]	[L1: 21.9272]	68.6+22.0s
+
+Evaluation:
+[Epoch 443]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.1110]	68.8+24.0s
+[36000/50000]	[L1: 22.0286]	69.2+24.3s
+
+Evaluation:
+[Epoch 444]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9630]	69.3+24.9s
+[36000/50000]	[L1: 21.9497]	68.6+21.1s
+
+Evaluation:
+[Epoch 445]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8321]	68.7+20.8s
+[36000/50000]	[L1: 21.8414]	68.6+20.2s
+
+Evaluation:
+[Epoch 446]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.1125]	68.5+20.4s
+[36000/50000]	[L1: 21.9519]	68.8+21.5s
+
+Evaluation:
+[Epoch 447]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9770]	68.7+22.4s
+[36000/50000]	[L1: 21.9204]	68.6+22.2s
+
+Evaluation:
+[Epoch 448]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9374]	68.6+22.5s
+[36000/50000]	[L1: 21.9239]	68.8+24.3s
+
+Evaluation:
+[Epoch 449]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8712]	68.8+22.1s
+[36000/50000]	[L1: 21.9074]	68.7+21.9s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0005 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2176.72s
+
+[Epoch 450]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9307]	68.3+30.8s
+[36000/50000]	[L1: 21.9424]	68.8+30.5s
+
+Evaluation:
+[Epoch 451]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8955]	68.9+23.0s
+[36000/50000]	[L1: 21.8922]	68.9+21.4s
+
+Evaluation:
+[Epoch 452]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9576]	69.0+20.6s
+[36000/50000]	[L1: 21.8867]	69.0+20.8s
+
+Evaluation:
+[Epoch 453]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8813]	68.9+20.8s
+[36000/50000]	[L1: 21.9499]	69.0+20.8s
+
+Evaluation:
+[Epoch 454]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8479]	69.1+20.2s
+[36000/50000]	[L1: 21.8936]	69.1+21.0s
+
+Evaluation:
+[Epoch 455]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9105]	69.1+22.5s
+[36000/50000]	[L1: 21.9150]	69.1+21.7s
+
+Evaluation:
+[Epoch 456]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8996]	69.0+22.3s
+[36000/50000]	[L1: 21.9080]	69.0+22.1s
+
+Evaluation:
+[Epoch 457]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0300]	69.1+20.8s
+[36000/50000]	[L1: 21.9442]	69.0+21.2s
+
+Evaluation:
+[Epoch 458]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9045]	68.9+20.9s
+[36000/50000]	[L1: 21.8727]	68.9+21.1s
+
+Evaluation:
+[Epoch 459]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9760]	69.0+21.5s
+[36000/50000]	[L1: 22.0033]	69.2+22.2s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0163 SSIM: 0.9541 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2176.55s
+
+[Epoch 460]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0289]	68.4+30.8s
+[36000/50000]	[L1: 22.0084]	68.6+31.1s
+
+Evaluation:
+[Epoch 461]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0495]	69.1+25.0s
+[36000/50000]	[L1: 22.0115]	69.0+23.6s
+
+Evaluation:
+[Epoch 462]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0634]	69.1+23.5s
+[36000/50000]	[L1: 22.0297]	69.3+23.6s
+
+Evaluation:
+[Epoch 463]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8755]	69.1+22.4s
+[36000/50000]	[L1: 21.9459]	69.0+22.2s
+
+Evaluation:
+[Epoch 464]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9630]	69.0+21.4s
+[36000/50000]	[L1: 21.8780]	71.5+40.2s
+
+Evaluation:
+[Epoch 465]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8889]	70.6+34.4s
+[36000/50000]	[L1: 21.8969]	70.9+40.6s
+
+Evaluation:
+[Epoch 466]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8629]	71.2+36.7s
+[36000/50000]	[L1: 21.8908]	70.1+35.0s
+
+Evaluation:
+[Epoch 467]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0308]	72.0+45.2s
+[36000/50000]	[L1: 21.9235]	69.8+29.2s
+
+Evaluation:
+[Epoch 468]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8267]	70.8+35.7s
+[36000/50000]	[L1: 21.8907]	71.2+40.3s
+
+Evaluation:
+[Epoch 469]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0088]	70.3+35.2s
+[36000/50000]	[L1: 21.9649]	73.1+54.8s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0112 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2971.78s
+
+[Epoch 470]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9026]	68.7+35.2s
+[36000/50000]	[L1: 21.9557]	68.8+35.5s
+
+Evaluation:
+[Epoch 471]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7712]	69.1+25.8s
+[36000/50000]	[L1: 21.8433]	69.1+25.4s
+
+Evaluation:
+[Epoch 472]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8602]	69.1+26.2s
+[36000/50000]	[L1: 21.9394]	69.0+28.0s
+
+Evaluation:
+[Epoch 473]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8559]	69.0+21.8s
+[36000/50000]	[L1: 21.9725]	69.4+24.5s
+
+Evaluation:
+[Epoch 474]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7989]	69.5+26.2s
+[36000/50000]	[L1: 21.8284]	69.2+22.2s
+
+Evaluation:
+[Epoch 475]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9248]	69.0+20.2s
+[36000/50000]	[L1: 21.9225]	69.0+19.9s
+
+Evaluation:
+[Epoch 476]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8802]	68.9+19.9s
+[36000/50000]	[L1: 21.9719]	68.8+20.2s
+
+Evaluation:
+[Epoch 477]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9348]	68.8+20.0s
+[36000/50000]	[L1: 21.9176]	68.8+19.7s
+
+Evaluation:
+[Epoch 478]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9463]	68.8+19.6s
+[36000/50000]	[L1: 21.8708]	68.8+19.5s
+
+Evaluation:
+[Epoch 479]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8639]	68.9+19.5s
+[36000/50000]	[L1: 21.8838]	69.1+19.8s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0058 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 2222.61s
+
+[Epoch 480]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8770]	68.6+30.7s
+[36000/50000]	[L1: 21.8717]	68.8+30.6s
+
+Evaluation:
+[Epoch 481]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7473]	69.4+24.8s
+[36000/50000]	[L1: 21.7939]	69.8+26.8s
+
+Evaluation:
+[Epoch 482]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9325]	69.4+21.6s
+[36000/50000]	[L1: 21.8426]	69.4+22.4s
+
+Evaluation:
+[Epoch 483]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8428]	69.3+21.2s
+[36000/50000]	[L1: 21.8918]	69.3+21.4s
+
+Evaluation:
+[Epoch 484]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8701]	69.3+21.4s
+[36000/50000]	[L1: 21.9030]	69.1+21.1s
+
+Evaluation:
+[Epoch 485]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9082]	69.0+21.1s
+[36000/50000]	[L1: 21.9276]	69.1+21.4s
+
+Evaluation:
+[Epoch 486]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8011]	69.1+21.2s
+[36000/50000]	[L1: 21.8386]	69.0+21.2s
+
+Evaluation:
+[Epoch 487]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0249]	69.0+19.7s
+[36000/50000]	[L1: 21.9119]	69.0+19.8s
+
+Evaluation:
+[Epoch 488]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9461]	69.0+21.2s
+[36000/50000]	[L1: 21.9673]	68.9+21.2s
+
+Evaluation:
+[Epoch 489]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9184]	68.9+20.1s
+[36000/50000]	[L1: 21.9119]	69.0+20.4s
+
+Evaluation:
+[TEST x5]	PSNR: 39.0065 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 1977.98s
+
+[Epoch 490]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9944]	68.7+29.4s
+[36000/50000]	[L1: 21.9567]	69.0+29.5s
+
+Evaluation:
+[Epoch 491]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8912]	69.3+21.7s
+[36000/50000]	[L1: 21.8527]	69.3+21.8s
+
+Evaluation:
+[Epoch 492]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8818]	69.3+19.8s
+[36000/50000]	[L1: 21.9145]	69.6+20.6s
+
+Evaluation:
+[Epoch 493]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0628]	69.5+21.1s
+[36000/50000]	[L1: 21.9192]	69.6+21.7s
+
+Evaluation:
+[Epoch 494]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.7895]	69.4+21.0s
+[36000/50000]	[L1: 21.8558]	69.5+21.3s
+
+Evaluation:
+[Epoch 495]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 22.0322]	69.6+21.0s
+[36000/50000]	[L1: 21.9523]	69.7+21.0s
+
+Evaluation:
+[Epoch 496]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8716]	68.9+19.7s
+[36000/50000]	[L1: 21.9022]	68.8+19.9s
+
+Evaluation:
+[Epoch 497]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8223]	68.9+19.8s
+[36000/50000]	[L1: 21.8937]	69.0+20.0s
+
+Evaluation:
+[Epoch 498]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.9295]	68.9+21.0s
+[36000/50000]	[L1: 21.8736]	69.1+22.6s
+
+Evaluation:
+[Epoch 499]	Learning rate: 6.25e-6
+[18000/50000]	[L1: 21.8984]	68.9+22.2s
+[36000/50000]	[L1: 21.8475]	68.9+21.7s
+
+Evaluation:
+[TEST x5]	PSNR: 38.9972 SSIM: 0.9540 (Best: 39.0172 0.9541 @epoch 399)
+Total time: 1876.73s
+

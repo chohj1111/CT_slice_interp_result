@@ -1,0 +1,12 @@
+case_ids	PSNR	SSIM
+colon_212	38.53	0.9377
+hepaticvessel_096	44.01	0.9792
+hepaticvessel_213	39.64	0.9602
+hepaticvessel_219	45.09	0.9838
+hepaticvessel_240	42.00	0.9668
+hepaticvessel_251	38.43	0.9561
+hepaticvessel_255	38.56	0.9488
+hepaticvessel_259	39.18	0.9341
+hepaticvessel_275	34.17	0.9108
+hepaticvessel_286	40.32	0.9620
+case_avg	39.99	0.9540
