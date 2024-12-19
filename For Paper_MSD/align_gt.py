@@ -22,6 +22,7 @@ for case in case_ids:
     
     gt_img = nib.load(os.path.join(gt_dir, case_id_only, f'imaging_1mm.nii.gz'))
     gt = gt_img.get_fdata()
+    gt = np.transpose(gt)
 
     if case_id_only == "colon_212":
         gt = gt[:456]
@@ -40,5 +41,7 @@ for case in case_ids:
     gt = gt[:, cor_nonzero[0]:cor_nonzero[-1] + 1, sag_nonzero[0]:sag_nonzero[-1]+1]
     gt = np.clip(gt, HU_MIN, HU_MAX)
     gt = (gt - HU_MIN) / (HU_MAX - HU_MIN)
+    gt = np.transpose(gt)
     nib.save(nib.Nifti1Image(gt, affine=gt_img.affine), os.path.join(out_dir, f'{case_id_only}_gt.nii.gz'))
+
     pass

@@ -41,7 +41,7 @@ psnr_list = []
 ssim_list = []
 
 for case in case_ids:
-    if '_pre' in case:
+    if '_pre' in case or '.txt' in case:
         continue
     case_id_only = case.replace('_test.nii.gz', '', 1)
     print(case_id_only)
@@ -70,7 +70,7 @@ for case in case_ids:
     sag_nonzero = np.argwhere(sag_proj > thr_sag).squeeze()
 
     gt = gt[:, cor_nonzero[0]:cor_nonzero[-1] + 1, sag_nonzero[0]:sag_nonzero[-1]+1]
-    out = out[:, cor_nonzero[0]:cor_nonzero[-1] + 1, sag_nonzero[0]:sag_nonzero[-1]+1]
+    # out = out[:, cor_nonzero[0]:cor_nonzero[-1] + 1, sag_nonzero[0]:sag_nonzero[-1]+1]
     gt = np.clip(gt, HU_MIN, HU_MAX)
     gt = (gt - HU_MIN) / (HU_MAX - HU_MIN)
 
